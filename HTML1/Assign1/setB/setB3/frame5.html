@@ -1,0 +1,18 @@
+<html>
+<head><title>Blinking Message</title>
+    <style>
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+        .blink {
+            animation: blink 1s infinite;
+            font-size: 18px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p class="blink">This is a blinking message!</p>
+</body>
+</html>

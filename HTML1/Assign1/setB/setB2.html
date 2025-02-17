@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>11 Section Frameset</title>
+</head>
+<body>
+    <h1>11 Section Frameset</h1>
+    <p>This page contains a frameset with 11 sections arranged in different rows and columns.</p>
+    <div style="display: grid; grid-template-rows: 20% 25% 25% 30%; height: 100vh; border: 1px solid black;">
+        <!-- First Row: One Frame -->
+        <div style="display: grid; grid-template-columns: 50% 50%;">
+            <iframe srcdoc="<h2>Section 1</h2><p>Content for section 1</p>" name="section1" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 2</h2><p>Content for section 2</p>" name="section2" style="width: 100%; height: 100%;"></iframe>
+        </div>
+
+        <!-- Second Row: Three Frames -->
+        <div style="display: grid; grid-template-columns: 30% 40% 30%;">
+            <iframe srcdoc="<h2>Section 3</h2><p>Content for section 3</p>" name="section3" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 4</h2><p>Content for section 4</p>" name="section4" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 5</h2><p>Content for section 5</p>" name="section5" style="width: 100%; height: 100%;"></iframe>
+        </div>
+
+        <!-- Third Row: Four Frames -->
+        <div style="display: grid; grid-template-columns: 20% 30% 30% 20%;">
+            <iframe srcdoc="<h2>Section 6</h2><p>Content for section 6</p>" name="section6" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 7</h2><p>Content for section 7</p>" name="section7" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 8</h2><p>Content for section 8</p>" name="section8" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 9</h2><p>Content for section 9</p>" name="section9" style="width: 100%; height: 100%;"></iframe>
+        </div>
+
+        <!-- Fourth Row: Three Frames -->
+        <div style="display: grid; grid-template-columns: 40% 30% 30%;">
+            <iframe srcdoc="<h2>Section 10</h2><p>Content for section 10</p>" name="section10" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 11</h2><p>Content for section 11</p>" name="section11" style="width: 100%; height: 100%;"></iframe>
+            <iframe srcdoc="<h2>Section 12</h2><p>Content for section 12</p>" name="section12" style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+</body>
+<div style="display: grid; grid-template-rows: 20% 25% 25% 30%; height: 100vh; border: 1px solid black;">
+    </div>
+</div>
+</html>

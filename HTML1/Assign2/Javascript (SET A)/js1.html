@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Prime Numbers</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Prime Numbers Between 1 and 100</h1>
+    <div id="primeNumS"></div>
+
+    <script>
+        for (let num = 2; num < 100; num++) {
+            for (let i=2;i<=num/2;i++){
+                if(num%i===0){
+                    break;
+                }
+                else{
+                    document.write(`${num} , `);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

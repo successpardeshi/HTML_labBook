@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Date Message</title>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                margin: 2%;
+        
+            }
+        
+            button {
+                border-radius: 2%;
+                background-color: aqua;
+                margin: 2%;
+             }
+
+        </style>
+</head>
+
+<body>
+    <h1>Enter a Date</h1>
+    <input type="date" id="dateInput">
+    <button onclick="checkDate()" action="Submit">Submit</button>
+    <p id="message" style="font-size: 15px;"></p>
+
+    <script>
+        function checkDate() {
+            const dateValue = document.getElementById('dateInput').value;
+
+            if (!dateValue) {
+                document.getElementById('message').textContent = "Please select a date.";
+                return;
+            }
+
+            const date = new Date(dateValue);
+            const day = date.getDate();
+            const month = date.getMonth() + 1; 
+            let message = "Have a Good Day";
+
+            if (day === 1 && month === 1) {
+                message = "Happy New Year";
+            } else if (day === 25 && month === 12) {
+                message = "Merry Christmas";
+            } else if (day === 14 && month === 1) {
+                message = "Happy Makarsankranti";
+            }
+
+            document.getElementById('message').textContent = message;
+        }
+    </script>
+</body>
+</html>

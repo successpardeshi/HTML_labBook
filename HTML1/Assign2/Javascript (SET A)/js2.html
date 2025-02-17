@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>Sum of Digits</title>
+    <style>
+        body{
+            display: grid;
+            place-items: center;
+            margin: 2%;
+            
+        }
+      
+        button{
+            border-radius: 2%;
+            background-color: aqua;
+            margin: 2%;
+            font-size: 50px;
+        }
+        input{
+            font-size: 90px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 120px;">Sum of Digits</h1>
+    <input type="number" id="numberInput" placeholder="Enter a number">
+    <button onclick="Sum()">Calculate</button>
+    <p id="result" style="font-size: 80px;"></p>
+
+    <script>
+        function Sum() {
+            const number = document.getElementById('numberInput').value;
+            let sum = 0;
+
+            for (let digit of number) {
+                sum += parseInt(digit, 10);
+            }
+
+            document.getElementById('result').textContent = `Sum of digits: ${sum}`;
+        }
+    </script>
+</body>
+</html>
